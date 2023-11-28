@@ -1,0 +1,43 @@
+<nav class="sidebar sidebar-offcanvas">
+  <ul class="nav">
+    <li class="nav-item nav-profile">
+      <div class="nav-link">
+        <div class="user-wrapper">
+          <div class="profile-image">
+            <img src="assets/images/faces/face1.jpg" alt="profile image">
+          </div>
+          <div class="text-wrapper">
+            <p class="profile-name">Admin</p>
+            <div>
+              <small class="designation text-muted">Administrator</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link pointer">
+        <i class="menu-icon fa fa-clipboard-list"></i>
+        <span class="menu-title">Projects</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link pointer">
+        <i class="menu-icon fa fa-users"></i>
+        <span class="menu-title">Users</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link pointer">
+        <i class="menu-icon fa fa-building"></i>
+        <span class="menu-title">Companies</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link cursor sign-out-button pointer" (click)="signOut()">
+        <i class="menu-icon fa fa-sign-out-alt"></i>
+        <span class="menu-title">Sign out</span>
+      </a>
+    </li>
+  </ul>
+</nav>
