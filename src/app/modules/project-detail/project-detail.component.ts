@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,4 +9,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './project-detail.component.css'
 })
 export class ProjectDetailComponent {
+  @Output() public clickOnFolders: EventEmitter<void>;
+
+  constructor() {
+    this.clickOnFolders = new EventEmitter();
+  }
 }

@@ -3,8 +3,10 @@
   <app-sidebar></app-sidebar>
   <div class="main-panel">
     <div class="content-wrapper">
-      <app-projects *ngIf="inProjects" (clickOnProjectDetail)="inProjects = false"></app-projects>
-      <app-project-detail *ngIf="!inProjects"></app-project-detail>
+      <app-projects *ngIf="viewType === PROJECTS" (clickOnProjectDetail)="viewType = PROJECT_DETAIL"></app-projects>
+      <app-project-detail *ngIf="viewType === PROJECT_DETAIL" (clickOnFolders)="viewType = FOLDERS">
+      </app-project-detail>
+      <app-folders *ngIf="viewType === FOLDERS"></app-folders>
     </div>
     <app-footer></app-footer>
   </div>
