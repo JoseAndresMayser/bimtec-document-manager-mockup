@@ -1,3 +1,18 @@
 .navbar-background {
   background-color: orangered;
 }
+
+.projects-dropdown {
+  color: black;
+  display: none;
+  position: absolute;
+  width: max-content;
+}
+
+.projects-dropdown-open {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}

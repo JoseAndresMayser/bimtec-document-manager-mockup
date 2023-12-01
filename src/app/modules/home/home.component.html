@@ -1,4 +1,6 @@
-<app-navbar></app-navbar>
+<app-navbar (clickOnProject)="viewType = PROJECT_DETAIL"
+            (clickOnCompany)="viewType = PROJECTS">
+</app-navbar>
 <div class="page-body-wrapper">
   <app-sidebar></app-sidebar>
   <div class="main-panel">
